@@ -1,0 +1,47 @@
+{
+  "idToTestNameHash": {
+    "FrScTe1": "From Scratch Tests reverse can reverse a simple string",
+    "FrScTe2": "From Scratch Tests reverse can reverse a string with spaces",
+    "FrScTe3": "From Scratch Tests reverse can reverse a numeric string",
+    "FrScTe4": "From Scratch Tests reverse is written recursively",
+    "FrScTe5": "From Scratch Tests Fibonacci fibIter - given n, returns the correct Fibonacci number",
+    "FrScTe6": "From Scratch Tests Fibonacci fibIter - is written iteratively",
+    "FrScTe7": "From Scratch Tests Fibonacci fibRec - given n, returns the correct Fibonacci number",
+    "FrScTe8": "From Scratch Tests Fibonacci fibRec - is written recursively",
+    "FrScTe9": "From Scratch Tests binarySearch returns the index of target if found or -1 if not",
+    "FrScTe10": "From Scratch Tests binarySearch is written recursively"
+  },
+  "testNameToIdHash": {
+    "From Scratch Tests reverse can reverse a simple string": "FrScTe1",
+    "From Scratch Tests reverse can reverse a string with spaces": "FrScTe2",
+    "From Scratch Tests reverse can reverse a numeric string": "FrScTe3",
+    "From Scratch Tests Fibonacci fibIter - given place, returns the Fibonacci number": "FrScTe4",
+    "From Scratch Tests Fibonacci fibRec - given place, returns the Fibonacci number": "FrScTe5",
+    "From Scratch Tests toStr given number and base, converts number to string of that base": "FrScTe6",
+    "From Scratch Tests Fibonacci fibIter - given n, returns the correct Fibonacci number": "FrScTe5",
+    "From Scratch Tests Fibonacci fibRec - given n, returns the correct Fibonacci number": "FrScTe7",
+    "From Scratch Tests binarySearch returns the index of target if found or -1 if not": "FrScTe9",
+    "From Scratch Tests reverse is written recursively": "FrScTe4",
+    "From Scratch Tests Fibonacci fibIter - is written iteratively": "FrScTe6",
+    "From Scratch Tests Fibonacci fibRec - is written recursively": "FrScTe8",
+    "From Scratch Tests binarySearch is written recursively": "FrScTe10"
+  },
+  "testScores": {
+    "From Scratch Tests": {
+      "FrScTe1": 0,
+      "FrScTe2": 0,
+      "FrScTe3": 0,
+      "FrScTe4": 0,
+      "FrScTe5": 0,
+      "FrScTe6": 1,
+      "FrScTe7": 0,
+      "FrScTe8": 0,
+      "FrScTe9": 0,
+      "FrScTe10": 0
+    }
+  },
+  "humanReadable": {
+    "From Scratch Tests": "1/10",
+    "finalTestScore": "FINAL SCORE: 1/10"
+  }
+}
