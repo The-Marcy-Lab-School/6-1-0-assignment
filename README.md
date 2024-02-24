@@ -6,13 +6,27 @@ Do them first!
 
 ## Coding Exercises
 
-**Use recursion to solve the following problem (unless otherwise stated).**
+**Use <u>Recursion</u> to solve the following problem (unless otherwise stated).**
 
-### 1 — Reverse a String:
+### 1 - Calculate Total Sum: 
+This interview question requires you to return the running total or sum. Make sure to think of the base case here and make sure you use recursion to accomplish this! Do not use iteration.
+
+```js
+getTotal([1, 2, 3])    // 6
+getTotal([2, 4, 6])    // 12
+getTotal([2, 2, 2, 2]) // 8
+getTotal([])           // 0
+```
+
+### 2 — Reverse a String:
 
 This interview question requires you to reverse a string using recursion. Make sure to think of the base case here and make sure you use recursion to accomplish this! Do not use iteration.
+```js
+reverse('recursion!') // !noisrucer
+reverse('madam')      // madam
+```
 
-### 2 — Fibonnaci Sequence:
+### 3 — Fibonnaci Sequence:
 
 Implement a Fibonnaci Sequence in two different ways - iteratively (using a `for`/`while` loop) and recursively. 
 
@@ -34,7 +48,7 @@ fibIter(7) // returns 13
 
 * `fibRec` should behave the same way!
 
-### 3 — Binary Search:
+### 4 — Binary Search:
 
 Write a recursive function called `binarySearch` that takes in two parameters: and array `arr` and a number `target` to find in the array. The function returns the index of `target` in the array `arr`, or `-1` if it can't find `target`.
 
@@ -47,9 +61,9 @@ const target1 = 8;
 const target2 = 12;
 const target3 = 7;
 
-console.log(binarySearch(arr, target1)); // Output: 3 (index of target1 in arr)
-console.log(binarySearch(arr, target2)); // Output: 5 (index of target2 in arr)
-console.log(binarySearch(arr, target3)); // Output: -1 (target3 not found in arr)
+console.log(binarySearch(arr, target1)); // 3: index of target1 in arr)
+console.log(binarySearch(arr, target2)); // 5: index of target2 in arr)
+console.log(binarySearch(arr, target3)); // -1: target3 not found in arr
 ```
 
 In these examples:

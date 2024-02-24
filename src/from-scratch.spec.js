@@ -1,12 +1,29 @@
 const path = require('path');
 const ScoreCounter = require('score-tests');
-const { reverse, fibRec, fibIter, binarySearch } = require('./from-scratch');
+const { sum, reverse, fibRec, fibIter, binarySearch } = require('./from-scratch');
 
 const testSuiteName = 'From Scratch Tests';
 const scoresDir = path.join(__dirname, '..', 'scores');
 const scoreCounter = new ScoreCounter(testSuiteName, scoresDir);
 
 describe(testSuiteName, () => {
+  describe('sum', () => {
+    it('can return the sum of a non empty array', () => {
+      expect(sum([1,2,3,4,5])).toEqual(15)
+      scoreCounter.correct(expect); // DO NOT TOUCH 
+    })
+
+    it('can return the sum of an empty array', () => {
+      expect(sum([])).toEqual(0)
+      scoreCounter.correct(expect); // DO NOT TOUCH 
+    })
+
+    it('is written recursively', () => {
+      expect(sum.toString().includes('sum') || sum.toString().includes('helper')).toBe(true);
+      scoreCounter.correct(expect); // DO NOT TOUCH
+    });
+  })
+
   describe('reverse', () => {
     it('can reverse a simple string', () => {
       expect(reverse('hello')).toEqual('olleh');
@@ -24,7 +41,7 @@ describe(testSuiteName, () => {
     });
 
     it('is written recursively', () => {
-      expect(reverse.toString().includes('reverse')).toBe(true);
+      expect(reverse.toString().includes('reverse') || reverse.toString().includes('helper')).toBe(true);
       scoreCounter.correct(expect); // DO NOT TOUCH
     });
   });
@@ -40,7 +57,7 @@ describe(testSuiteName, () => {
     });
 
     it('fibIter - is written iteratively', () => {
-      expect(fibIter.toString().includes('fibIter')).toBe(false);
+      expect(fibIter.toString().includes('fibIter') || fibIter.toString().includes('helper')).toBe(false);
       scoreCounter.correct(expect); // DO NOT TOUCH
     });
 
@@ -54,7 +71,7 @@ describe(testSuiteName, () => {
     });
 
     it('fibRec - is written recursively', () => {
-      expect(fibRec.toString().includes('fibRec')).toBe(true);
+      expect(fibRec.toString().includes('fibRec') || fibRec.toString().includes('helper')).toBe(true);
       scoreCounter.correct(expect); // DO NOT TOUCH
     });
   });
@@ -73,8 +90,8 @@ describe(testSuiteName, () => {
       scoreCounter.correct(expect); // DO NOT TOUCH
     });
     it('is written recursively', () => {
-      expect(binarySearch.toString().includes('binarySearch')).toBe(true);
-      scoreCounter.correct(expect); // DO NOT TOUCH
+      expect(binarySearch.toString().includes('binarySearch') || binarySearch.toString().includes('helper')).toBe(true);
+      scoreCounter.correct(expect); // DO NOT TOUCH 
     });
   });
 
